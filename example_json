@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "num": 0,
+      "institute": "string",
+      "login": "string",
+      "stud_n": 0,
+      "report_no": 0,
+      "report_type": "string",
+      "date": "string",
+      "participants": [
+        {
+          "created": {
+            "createdDate": "string",
+            "createdTime": "string"
+          },
+          "formalized": {
+            "formalizedDate": "string",
+            "formalizedTime": "string"
+          },
+          "credited": {
+            "creditedDate": "string",
+            "creditedTime": "string"
+          },
+          "comment": {
+            "commentText": "string"
+          },
+          "ipAddress": "string"
+        }
+      ]
+    }
+  ]
+}

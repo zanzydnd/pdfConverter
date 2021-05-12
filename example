@@ -1,0 +1,455 @@
+<pdf>
+    <entities>
+        <entity>
+            <num>123</num>
+            <institute>ITIS</institute>
+            <login>Login</login>
+            <stud_n>65</stud_n>
+            <report_no>32223</report_no>
+            <report_type>TT</report_type>
+            <date>
+                15:02:49 25.04.2021
+            </date>
+            <participants>
+                <patricipant>
+                    <created>
+                        <createdDate>
+                            25-09-2020
+                        </createdDate>
+                        <createdTime>
+                            13:46:25
+                        </createdTime>
+                    </created>
+
+                    <formalized>
+                        <formalizedDate>
+                            25-09-2020
+                        </formalizedDate>
+                        <formalizedTime>
+                            13:46:25
+                        </formalizedTime>
+                    </formalized>
+
+                    <credited>
+                        <creditedDate>
+                            25-09-2020
+                        </creditedDate>
+                        <creditedTime>
+                            13:46:25
+                        </creditedTime>
+                    </credited>
+
+                    <comment>
+                        <commentText>
+                            Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
+                            JSON
+                            или
+                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
+                            добавить
+                            пример JSON и XML, чтобы я смог это потестить
+                        </commentText>
+                    </comment>
+
+                    <nameJob>
+                        <name>
+                            Иванов Иван Иванович
+                        </name>
+                        <job>
+                            Абобер
+                        </job>
+                    </nameJob>
+
+                    <ipAddress>
+                        192.168.0.15
+                    </ipAddress>
+                </patricipant>
+
+                <patricipant>
+
+                    <created>
+                        <createdDate>
+                            25-09-2020
+                        </createdDate>
+                        <createdTime>
+                            13:46:25
+                        </createdTime>
+                    </created>
+
+                    <formalized>
+                        <formalizedDate>
+                            25-09-2020
+                        </formalizedDate>
+                        <formalizedTime>
+                            13:46:25
+                        </formalizedTime>
+                    </formalized>
+
+                    <credited>
+                        <creditedDate>
+                            25-09-2020
+                        </creditedDate>
+                        <creditedTime>
+                            13:46:25
+                        </creditedTime>
+                    </credited>
+
+                    <comment>
+                        <commentText>
+                            Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
+                            JSON
+                            или
+                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
+                            добавить
+                            пример JSON и XML, чтобы я смог это потестить
+                        </commentText>
+                    </comment>
+
+                    <nameJob>
+                        <name>
+                            Иванов Иван Иванович
+                        </name>
+                        <job>
+                            Абобер
+                        </job>
+                    </nameJob>
+
+                    <ipAddress>
+                        192.168.0.15
+                    </ipAddress>
+                </patricipant>
+                <patricipant>
+
+                    <created>
+                        <createdDate>
+                            25-09-2020
+                        </createdDate>
+                        <createdTime>
+                            13:46:25
+                        </createdTime>
+                    </created>
+
+                    <formalized>
+                        <formalizedDate>
+                            25-09-2020
+                        </formalizedDate>
+                        <formalizedTime>
+                            13:46:25
+                        </formalizedTime>
+                    </formalized>
+
+                    <credited>
+                        <creditedDate>
+                            25-09-2020
+                        </creditedDate>
+                        <creditedTime>
+                            13:46:25
+                        </creditedTime>
+                    </credited>
+
+                    <comment>
+                        <commentText>
+                            Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
+                            JSON
+                            или
+                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
+                            добавить
+                            пример JSON и XML, чтобы я смог это потестить
+                        </commentText>
+                    </comment>
+
+                    <nameJob>
+                        <name>
+                            Иванов Иван Иванович
+                        </name>
+                        <job>
+                            Абобер
+                        </job>
+                    </nameJob>
+
+                    <ipAddress>
+                        192.168.0.15
+                    </ipAddress>
+                </patricipant>
+                <patricipant>
+
+                    <created>
+                        <createdDate>
+                            25-09-2020
+                        </createdDate>
+                        <createdTime>
+                            13:46:25
+                        </createdTime>
+                    </created>
+
+                    <formalized>
+                        <formalizedDate>
+                            25-09-2020
+                        </formalizedDate>
+                        <formalizedTime>
+                            13:46:25
+                        </formalizedTime>
+                    </formalized>
+
+                    <credited>
+                        <creditedDate>
+                            25-09-2020
+                        </creditedDate>
+                        <creditedTime>
+                            13:46:25
+                        </creditedTime>
+                    </credited>
+
+                    <comment>
+                        <commentText>
+                            Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
+                            JSON
+                            или
+                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
+                            добавить
+                            пример JSON и XML, чтобы я смог это потестить
+                        </commentText>
+                    </comment>
+
+                    <nameJob>
+                        <name>
+                            Иванов Иван Иванович
+                        </name>
+                        <job>
+                            Абобер
+                        </job>
+                    </nameJob>
+
+                    <ipAddress>
+                        192.168.0.15
+                    </ipAddress>
+                </patricipant>
+            </participants>
+        </entity>
+
+
+        <entity>
+            <num>123</num>
+            <institute>ITIS</institute>
+            <login>Login</login>
+            <stud_n>65</stud_n>
+            <report_no>32223</report_no>
+            <report_type>TT</report_type>
+            <date>15:02:49 25.04.2021</date>
+            <participants>
+                <patricipant>
+
+                    <created>
+                        <createdDate>
+                            25-09-2020
+                        </createdDate>
+                        <createdTime>
+                            13:46:25
+                        </createdTime>
+                    </created>
+
+                    <formalized>
+                        <formalizedDate>
+                            25-09-2020
+                        </formalizedDate>
+                        <formalizedTime>
+                            13:46:25
+                        </formalizedTime>
+                    </formalized>
+
+                    <credited>
+                        <creditedDate>
+                            25-09-2020
+                        </creditedDate>
+                        <creditedTime>
+                            13:46:25
+                        </creditedTime>
+                    </credited>
+
+                    <comment>
+                        <commentText>
+                            Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
+                            JSON
+                            или
+                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
+                            добавить
+                            пример JSON и XML, чтобы я смог это потестить
+                        </commentText>
+                    </comment>
+
+                    <nameJob>
+                        <name>
+                            Иванов Иван Иванович
+                        </name>
+                        <job>
+                            Абобер
+                        </job>
+                    </nameJob>
+
+                    <ipAddress>
+                        192.168.0.15
+                    </ipAddress>
+                </patricipant>
+
+                <patricipant>
+
+                    <created>
+                        <createdDate>
+                            25-09-2020
+                        </createdDate>
+                        <createdTime>
+                            13:46:25
+                        </createdTime>
+                    </created>
+
+                    <formalized>
+                        <formalizedDate>
+                            25-09-2020
+                        </formalizedDate>
+                        <formalizedTime>
+                            13:46:25
+                        </formalizedTime>
+                    </formalized>
+
+                    <credited>
+                        <creditedDate>
+                            25-09-2020
+                        </creditedDate>
+                        <creditedTime>
+                            13:46:25
+                        </creditedTime>
+                    </credited>
+
+                    <comment>
+                        <commentText>
+                            Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
+                            JSON
+                            или
+                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
+                            добавить
+                            пример JSON и XML, чтобы я смог это потестить
+                        </commentText>
+                    </comment>
+
+                    <nameJob>
+                        <name>
+                            Иванов Иван Иванович
+                        </name>
+                        <job>
+                            Абобер
+                        </job>
+                    </nameJob>
+
+                    <ipAddress>
+                        192.168.0.15
+                    </ipAddress>
+                </patricipant>
+                <patricipant>
+
+                    <created>
+                        <createdDate>
+                            25-09-2020
+                        </createdDate>
+                        <createdTime>
+                            13:46:25
+                        </createdTime>
+                    </created>
+
+                    <formalized>
+                        <formalizedDate>
+                            25-09-2020
+                        </formalizedDate>
+                        <formalizedTime>
+                            13:46:25
+                        </formalizedTime>
+                    </formalized>
+
+                    <credited>
+                        <creditedDate>
+                            25-09-2020
+                        </creditedDate>
+                        <creditedTime>
+                            13:46:25
+                        </creditedTime>
+                    </credited>
+
+                    <comment>
+                        <commentText>
+                            Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
+                            JSON
+                            или
+                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
+                            добавить
+                            пример JSON и XML, чтобы я смог это потестить
+                        </commentText>
+                    </comment>
+
+                    <nameJob>
+                        <name>
+                            Иванов Иван Иванович
+                        </name>
+                        <job>
+                            Абобер
+                        </job>
+                    </nameJob>
+
+                    <ipAddress>
+                        192.168.0.15
+                    </ipAddress>
+                </patricipant>
+                <patricipant>
+
+                    <created>
+                        <createdDate>
+                            25-09-2020
+                        </createdDate>
+                        <createdTime>
+                            13:46:25
+                        </createdTime>
+                    </created>
+
+                    <formalized>
+                        <formalizedDate>
+                            25-09-2020
+                        </formalizedDate>
+                        <formalizedTime>
+                            13:46:25
+                        </formalizedTime>
+                    </formalized>
+
+                    <credited>
+                        <creditedDate>
+                            25-09-2020
+                        </creditedDate>
+                        <creditedTime>
+                            13:46:25
+                        </creditedTime>
+                    </credited>
+
+                    <comment>
+                        <commentText>
+                            Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
+                            JSON
+                            или
+                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
+                            добавить
+                            пример JSON и XML, чтобы я смог это потестить
+                        </commentText>
+                    </comment>
+
+                    <nameJob>
+                        <name>
+                            Иванов Иван Иванович
+                        </name>
+                        <job>
+                            Абобер
+                        </job>
+                    </nameJob>
+
+                    <ipAddress>
+                        192.168.0.15
+                    </ipAddress>
+                </patricipant>
+            </participants>
+        </entity>
+    </entities>
+</pdf>
