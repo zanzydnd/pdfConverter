@@ -9,11 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Participant {
-    private Created created;
-    private Formalized formalized;
-    private Credited credited;
-    private Person person;
-    private Comment comment;
-    private String ipAddress;
+public class Person {
+    private String personName;
+    private String personJob;
 }

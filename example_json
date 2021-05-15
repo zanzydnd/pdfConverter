@@ -1,4 +1,5 @@
 {
+  "name": "Pdf2",
   "entities": [
     {
       "num": 0,
@@ -24,6 +25,10 @@
           },
           "comment": {
             "commentText": "string"
+          },
+          "person": {
+            "personName": "Иван Иванов Иванович",
+            "personJob": "Вахтер"
           },
           "ipAddress": "string"
         }

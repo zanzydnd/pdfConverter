@@ -1,4 +1,7 @@
 <pdf>
+    <name>
+        Pdf1
+    </name>
     <entities>
         <entity>
             <num>123</num>

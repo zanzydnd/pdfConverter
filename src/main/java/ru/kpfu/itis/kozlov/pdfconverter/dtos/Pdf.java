@@ -13,5 +13,6 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class Pdf {
+    String name;
     List<Entity> entities;
 }

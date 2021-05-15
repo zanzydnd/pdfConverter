@@ -6,6 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import ru.kpfu.itis.kozlov.pdfconverter.dtos.Pdf;
 
+import javax.validation.constraints.NotNull;
+
 import static org.springframework.http.MediaType.*;
 
 @Controller
@@ -17,7 +19,7 @@ public class LonelyController {
             produces = {APPLICATION_XML_VALUE,APPLICATION_JSON_VALUE}
     )
     @ResponseBody
-    public ResponseEntity toPdf(@RequestBody Pdf pdf) {
+    public ResponseEntity toPdf(@RequestBody @NotNull Pdf pdf) {
         System.out.println(pdf);
         return ResponseEntity.ok(null);
     }
