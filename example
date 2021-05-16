@@ -1,7 +1,5 @@
 <pdf>
-    <name>
-        Pdf1
-    </name>
+    <name>Pdf1</name>
     <entities>
         <entity>
             <num>123</num>
@@ -45,22 +43,16 @@
                     <comment>
                         <commentText>
                             Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
-                            JSON
-                            или
-                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
-                            добавить
-                            пример JSON и XML, чтобы я смог это потестить
+                            JSON или XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также
+                            нужно добавить
+                            пример JSON и XML, чтобы я смог это потестить.
                         </commentText>
                     </comment>
 
-                    <nameJob>
-                        <name>
-                            Иванов Иван Иванович
-                        </name>
-                        <job>
-                            Абобер
-                        </job>
-                    </nameJob>
+                    <person>
+                        <personName>Альберт Энштейн Шетейн</personName>
+                        <personJob>Физик</personJob>
+                    </person>
 
                     <ipAddress>
                         192.168.0.15
@@ -107,14 +99,10 @@
                         </commentText>
                     </comment>
 
-                    <nameJob>
-                        <name>
-                            Иванов Иван Иванович
-                        </name>
-                        <job>
-                            Абобер
-                        </job>
-                    </nameJob>
+                    <person>
+                        <personName>Альберт Энштейн Шетейн</personName>
+                        <personJob>Физик</personJob>
+                    </person>
 
                     <ipAddress>
                         192.168.0.15
@@ -160,14 +148,10 @@
                         </commentText>
                     </comment>
 
-                    <nameJob>
-                        <name>
-                            Иванов Иван Иванович
-                        </name>
-                        <job>
-                            Абобер
-                        </job>
-                    </nameJob>
+                    <person>
+                        <personName>Альберт Энштейн Шетейн</personName>
+                        <personJob>Физик</personJob>
+                    </person>
 
                     <ipAddress>
                         192.168.0.15
@@ -213,14 +197,206 @@
                         </commentText>
                     </comment>
 
-                    <nameJob>
-                        <name>
-                            Иванов Иван Иванович
-                        </name>
-                        <job>
-                            Абобер
-                        </job>
-                    </nameJob>
+                    <person>
+                        <personName>Альберт Энштейн Шетейн</personName>
+                        <personJob>Физик</personJob>
+                    </person>
+
+                    <ipAddress>
+                        192.168.0.15
+                    </ipAddress>
+                </patricipant>
+                <patricipant>
+
+                    <created>
+                        <createdDate>
+                            25-09-2020
+                        </createdDate>
+                        <createdTime>
+                            13:46:25
+                        </createdTime>
+                    </created>
+
+                    <formalized>
+                        <formalizedDate>
+                            25-09-2020
+                        </formalizedDate>
+                        <formalizedTime>
+                            13:46:25
+                        </formalizedTime>
+                    </formalized>
+
+                    <credited>
+                        <creditedDate>
+                            25-09-2020
+                        </creditedDate>
+                        <creditedTime>
+                            13:46:25
+                        </creditedTime>
+                    </credited>
+
+                    <comment>
+                        <commentText>
+                            Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
+                            JSON
+                            или
+                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
+                            добавить
+                            пример JSON и XML, чтобы я смог это потестить
+                        </commentText>
+                    </comment>
+
+                    <person>
+                        <personName>Альберт Энштейн Шетейн</personName>
+                        <personJob>Физик</personJob>
+                    </person>
+
+                    <ipAddress>
+                        192.168.0.15
+                    </ipAddress>
+                </patricipant>
+                <patricipant>
+
+                    <created>
+                        <createdDate>
+                            25-09-2020
+                        </createdDate>
+                        <createdTime>
+                            13:46:25
+                        </createdTime>
+                    </created>
+
+                    <formalized>
+                        <formalizedDate>
+                            25-09-2020
+                        </formalizedDate>
+                        <formalizedTime>
+                            13:46:25
+                        </formalizedTime>
+                    </formalized>
+
+                    <credited>
+                        <creditedDate>
+                            25-09-2020
+                        </creditedDate>
+                        <creditedTime>
+                            13:46:25
+                        </creditedTime>
+                    </credited>
+
+                    <comment>
+                        <commentText>
+                            Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
+                            JSON
+                            или
+                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
+                            добавить
+                            пример JSON и XML, чтобы я смог это потестить
+                        </commentText>
+                    </comment>
+
+                    <person>
+                        <personName>Альберт Энштейн Шетейн</personName>
+                        <personJob>Физик</personJob>
+                    </person>
+
+                    <ipAddress>
+                        192.168.0.15
+                    </ipAddress>
+                </patricipant>
+                <patricipant>
+
+                    <created>
+                        <createdDate>
+                            25-09-2020
+                        </createdDate>
+                        <createdTime>
+                            13:46:25
+                        </createdTime>
+                    </created>
+
+                    <formalized>
+                        <formalizedDate>
+                            25-09-2020
+                        </formalizedDate>
+                        <formalizedTime>
+                            13:46:25
+                        </formalizedTime>
+                    </formalized>
+
+                    <credited>
+                        <creditedDate>
+                            25-09-2020
+                        </creditedDate>
+                        <creditedTime>
+                            13:46:25
+                        </creditedTime>
+                    </credited>
+
+                    <comment>
+                        <commentText>
+                            Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
+                            JSON
+                            или
+                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
+                            добавить
+                            пример JSON и XML, чтобы я смог это потестить
+                        </commentText>
+                    </comment>
+
+                    <person>
+                        <personName>Альберт Энштейн Шетейн</personName>
+                        <personJob>Физик</personJob>
+                    </person>
+
+                    <ipAddress>
+                        192.168.0.15
+                    </ipAddress>
+                </patricipant>
+                <patricipant>
+
+                    <created>
+                        <createdDate>
+                            25-09-2020
+                        </createdDate>
+                        <createdTime>
+                            13:46:25
+                        </createdTime>
+                    </created>
+
+                    <formalized>
+                        <formalizedDate>
+                            25-09-2020
+                        </formalizedDate>
+                        <formalizedTime>
+                            13:46:25
+                        </formalizedTime>
+                    </formalized>
+
+                    <credited>
+                        <creditedDate>
+                            25-09-2020
+                        </creditedDate>
+                        <creditedTime>
+                            13:46:25
+                        </creditedTime>
+                    </credited>
+
+                    <comment>
+                        <commentText>
+                            Это Pdf, который должен сформировываться после вызова http метода. Все данные берутся из
+                            JSON
+                            или
+                            XML, который отправляется в метод. Структуру JSON разработайте сами. В Гит также нужно
+                            добавить
+                            пример JSON и XML, чтобы я смог это потестить
+                        </commentText>
+                    </comment>
+
+                    <person>
+                        <personName>Альберт Энштейн Шетейн</personName>
+                        <personJob>Физик гений Плейбой Филантроп</personJob>
+                    </person>
 
                     <ipAddress>
                         192.168.0.15
@@ -279,14 +455,10 @@
                         </commentText>
                     </comment>
 
-                    <nameJob>
-                        <name>
-                            Иванов Иван Иванович
-                        </name>
-                        <job>
-                            Абобер
-                        </job>
-                    </nameJob>
+                    <person>
+                        <personName>Альберт Энштейн Шетейн</personName>
+                        <personJob>Физик</personJob>
+                    </person>
 
                     <ipAddress>
                         192.168.0.15
@@ -332,15 +504,10 @@
                             пример JSON и XML, чтобы я смог это потестить
                         </commentText>
                     </comment>
-
-                    <nameJob>
-                        <name>
-                            Иванов Иван Иванович
-                        </name>
-                        <job>
-                            Абобер
-                        </job>
-                    </nameJob>
+                    <person>
+                        <personName>Альберт Энштейн Шетейн</personName>
+                        <personJob>Физик</personJob>
+                    </person>
 
                     <ipAddress>
                         192.168.0.15
@@ -386,14 +553,10 @@
                         </commentText>
                     </comment>
 
-                    <nameJob>
-                        <name>
-                            Иванов Иван Иванович
-                        </name>
-                        <job>
-                            Абобер
-                        </job>
-                    </nameJob>
+                    <person>
+                        <personName>Альберт Энштейн Шетейн</personName>
+                        <personJob>Физик</personJob>
+                    </person>
 
                     <ipAddress>
                         192.168.0.15
@@ -439,14 +602,10 @@
                         </commentText>
                     </comment>
 
-                    <nameJob>
-                        <name>
-                            Иванов Иван Иванович
-                        </name>
-                        <job>
-                            Абобер
-                        </job>
-                    </nameJob>
+                    <person>
+                        <personName>Альберт Энштейн Шетейн</personName>
+                        <personJob>Физик</personJob>
+                    </person>
 
                     <ipAddress>
                         192.168.0.15

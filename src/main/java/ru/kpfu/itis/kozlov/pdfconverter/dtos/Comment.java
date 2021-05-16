@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class Comment {
-    private String commentText;
+    public String commentText;
 }

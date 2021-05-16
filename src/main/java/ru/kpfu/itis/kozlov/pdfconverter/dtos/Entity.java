@@ -12,12 +12,12 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class Entity {
-    private Long num;
-    private String institute;
-    private String login;
-    private Long stud_n;
-    private Long report_no;
-    private String report_type;
-    private String date;
+    public Long num;
+    public String institute;
+    public String login;
+    public Long stud_n;
+    public Long report_no;
+    public String report_type;
+    public String date;
     private List<Participant> participants;
 }

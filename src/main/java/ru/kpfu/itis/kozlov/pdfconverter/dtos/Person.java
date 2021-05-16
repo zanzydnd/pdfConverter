@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class Person {
-    private String personName;
-    private String personJob;
+    public String personName;
+    public String personJob;
 }

@@ -10,10 +10,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class Participant {
-    private Created created;
-    private Formalized formalized;
-    private Credited credited;
-    private Person person;
-    private Comment comment;
-    private String ipAddress;
+    public Created created;
+    public Formalized formalized;
+    public Credited credited;
+    public Comment comment;
+    public Person person;
+    public String ipAddress;
 }

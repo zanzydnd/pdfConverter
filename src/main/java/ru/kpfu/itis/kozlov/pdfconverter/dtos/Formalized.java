@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class Formalized {
-    private String formalizedDate;
-    private String formalizedTime;
+    public String formalizedDate;
+    public String formalizedTime;
 }

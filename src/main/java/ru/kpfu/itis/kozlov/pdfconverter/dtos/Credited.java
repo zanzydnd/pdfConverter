@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class Credited {
-    private String creditedDate;
-    private String creditedTime;
+    public String creditedDate;
+    public String creditedTime;
 }

@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class Created {
-    private String createdDate;
-    private String createdTime;
+    public String createdDate;
+    public String createdTime;
 }
