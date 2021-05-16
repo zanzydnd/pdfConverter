@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.List;
@@ -14,7 +15,6 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class Entity {
-    @NotBlank
     @NotNull
     public Long num;
     @NotBlank
@@ -23,10 +23,8 @@ public class Entity {
     @NotBlank
     @NotNull
     public String login;
-    @NotBlank
     @NotNull
     public Long stud_n;
-    @NotBlank
     @NotNull
     public Long report_no;
     @NotBlank
@@ -36,5 +34,6 @@ public class Entity {
     @NotNull
     public String date;
     @NotNull
+    @Valid
     private List<Participant> participants;
 }
