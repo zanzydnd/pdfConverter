@@ -10,11 +10,15 @@ import org.springframework.stereotype.Service;
 import ru.kpfu.itis.kozlov.pdfconverter.dtos.Entity;
 import ru.kpfu.itis.kozlov.pdfconverter.dtos.Participant;
 import ru.kpfu.itis.kozlov.pdfconverter.dtos.Pdf;
+import ru.kpfu.itis.kozlov.pdfconverter.exceptions.NotValidException;
 import ru.kpfu.itis.kozlov.pdfconverter.fontUtil.RussianHelper;
 
+import javax.servlet.http.Part;
 import javax.xml.crypto.Data;
 import java.io.*;
 import java.lang.reflect.Field;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.UUID;
@@ -35,12 +39,126 @@ public class ConverterService {
     static Font font4 = new Font(base, 9, Font.BOLD);
 
 
-    public static void validatePdf(Pdf pdf) {
+    public static void validatePdf(Pdf pdf) throws NotValidException {
+        if (pdf.getName() == null || pdf.getName().equals("")) {
+            throw new NotValidException("Enter name");
+        }
+        //\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}
+        //
+        for (Entity entity : pdf.getEntities()) {
+
+            if (entity.getInstitute() == null || entity.getInstitute().equals(""))
+                throw new NotValidException("Enter Institute");
+
+            if (entity.getDate() == null || entity.getDate().equals("")) {
+                throw new NotValidException("Enter Date");
+            } else {
+                SimpleDateFormat dateValidator = new SimpleDateFormat("HH:mm:ss dd-MM-yyyy");
+                try {
+                    dateValidator.parse(entity.getDate());
+                } catch (ParseException e) {
+                    throw new NotValidException("Enter The valid data format HH:mm:ss dd-MM-yyyy");
+                }
+            }
+
+            if (entity.getLogin() == null || entity.getLogin().equals(""))
+                throw new NotValidException("Enter Login");
+
+            if (entity.getReport_type() == null || entity.getReport_type().equals(""))
+                throw new NotValidException("Enter ReportType");
+
+            if (entity.getNum() == null)
+                throw new NotValidException("Enter num");
+
+            if (entity.getReport_no() == null)
+                throw new NotValidException("Enter report n");
+
+            if (entity.getStud_n() == null)
+                throw new NotValidException("Enter report stud n");
+
+            if (!entity.getParticipants().isEmpty()) {
+                for (Participant participant : entity.getParticipants()) {
+                    if (participant.getCreated() == null)
+                        throw new NotValidException("Enter created");
+                    if (participant.getCreated().getCreatedTime() == null)
+                        throw new NotValidException("Enter createdTime");
+                    try {//dd-MM-yyyy
+                        SimpleDateFormat dateValidator = new SimpleDateFormat("HH:mm:ss");
+                        dateValidator.parse(participant.getCreated().createdTime);
+                    } catch (ParseException e) {
+                        throw new NotValidException("Enter correct date");
+                    }
+
+                    if (participant.getCreated().getCreatedDate() == null)
+                        throw new NotValidException("Enter createdDate");
+                    try {//dd-MM-yyyy
+                        SimpleDateFormat dateValidator = new SimpleDateFormat("dd-MM-yyyy");
+                        dateValidator.parse(participant.getCreated().getCreatedDate());
+                    } catch (ParseException e) {
+                        throw new NotValidException("Enter correct date");
+                    }
 
 
+                    if (participant.getFormalized() == null)
+                        throw new NotValidException("Enter formalized");
+                    if (participant.getFormalized().getFormalizedTime() == null)
+                        throw new NotValidException("Enter formalizedTime");
+                    try {//dd-MM-yyyy
+                        SimpleDateFormat dateValidator = new SimpleDateFormat("HH:mm:ss");
+                        dateValidator.parse(participant.getFormalized().getFormalizedTime());
+                    } catch (ParseException e) {
+                        throw new NotValidException("Enter correct date");
+                    }
+
+                    if (participant.getFormalized().getFormalizedDate() == null)
+                        throw new NotValidException("Enter formalizedDate");
+                    try {//dd-MM-yyyy
+                        SimpleDateFormat dateValidator = new SimpleDateFormat("dd-MM-yyyy");
+                        dateValidator.parse(participant.getFormalized().getFormalizedDate());
+                    } catch (ParseException e) {
+                        throw new NotValidException("Enter correct date");
+                    }
+
+
+                    if (participant.getCredited() == null)
+                        throw new NotValidException("Enter credited");
+                    if (participant.getCredited().getCreditedTime() == null)
+                        throw new NotValidException("Enter creditedTime");
+                    try {//dd-MM-yyyy
+                        SimpleDateFormat dateValidator = new SimpleDateFormat("HH:mm:ss");
+                        dateValidator.parse(participant.getCredited().getCreditedTime());
+                    } catch (ParseException e) {
+                        throw new NotValidException("Enter correct date");
+                    }
+
+                    if (participant.getCredited().getCreditedDate() == null)
+                        throw new NotValidException("Enter creditedDate");
+                    try {//dd-MM-yyyy
+                        SimpleDateFormat dateValidator = new SimpleDateFormat("dd-MM-yyyy");
+                        dateValidator.parse(participant.getCredited().getCreditedDate());
+                    } catch (ParseException e) {
+                        throw new NotValidException("Enter correct date");
+                    }
+
+
+                    if (participant.getComment() == null || participant.getComment().getCommentText() == null ||
+                            participant.getComment().getCommentText().equals(""))
+                        throw new NotValidException("Enter Commnet");
+
+                    if (participant.getIpAddress() == null || participant.getIpAddress().equals(""))
+                        throw new NotValidException("Enter IpAddress");
+
+                    if (!participant.getIpAddress().matches("\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}"))
+                        throw new NotValidException("Enter Valid ipAddress");
+
+                }
+            } else {
+                throw new NotValidException("Enter participants");
+            }
+        }
     }
 
-    public void convertToPdf(Pdf pdf) throws IOException, DocumentException, IllegalAccessException {
+    public void convertToPdf(Pdf pdf) throws IOException, DocumentException, IllegalAccessException, NotValidException {
 
         validatePdf(pdf);
 

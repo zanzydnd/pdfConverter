@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Data
@@ -13,6 +15,9 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class Pdf {
+    @NotBlank
+    @NotNull
     String name;
+    @NotNull
     List<Entity> entities;
 }

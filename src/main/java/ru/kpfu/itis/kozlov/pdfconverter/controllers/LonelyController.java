@@ -5,8 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import ru.kpfu.itis.kozlov.pdfconverter.dtos.Pdf;
+import ru.kpfu.itis.kozlov.pdfconverter.exceptions.NotValidException;
 import ru.kpfu.itis.kozlov.pdfconverter.services.ConverterService;
 
 import javax.validation.constraints.NotNull;
@@ -28,8 +30,13 @@ public class LonelyController {
             produces = {APPLICATION_XML_VALUE, APPLICATION_JSON_VALUE}
     )
     @ResponseBody
-    public ResponseEntity toPdf(@RequestBody @NotNull Pdf pdf) throws IOException, DocumentException, IllegalAccessException {
-        converterService.convertToPdf(pdf);
+    public ResponseEntity toPdf(@RequestBody @Validated Pdf pdf) throws IOException, DocumentException, IllegalAccessException {
+        try {
+            converterService.convertToPdf(pdf);
+        } catch (NotValidException e) {
+            System.out.println("No");
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
         return ResponseEntity.ok(null);
     }
 
